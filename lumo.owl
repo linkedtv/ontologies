@@ -1,0 +1,6971 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://data.linkedtv.eu/ontologies/lumo"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://data.linkedtv.eu/ontologies/lumo">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="lumo" IRI="http://data.linkedtv.eu/ontologies/lumo#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LUMO, the LinkedTV User Model Ontology, defines classes, properties, individuals and DLP axioms to represent a user and his/her preferences and context dimensions within the networked media domain. </Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">This ontology is developed within the LinkedTV (www.linkedtv.eu ) FP7 ICT EU project for the purposes of personalization and contextualization of TV and related web content. This includes modeling user preferences and semantic filtering of concepts and content. 
+The information modeled in this ontology is guided by LinkedTV scenarios (for more information visit http://www.linkedtv.eu/scenarios/).</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">v1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#publisher"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Centre for Research and Technology Hellas (CERTH) - 
+Information Technologies Institute (ITI)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="#title"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LUMO, the LinkedTV User Model Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Act"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Active_User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Addiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Administrative_region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adult_education"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Adventure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aero_sports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Afternoon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Age_categorization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Age_group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agnosticism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agnosticist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agriculture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aicraft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airplane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Album"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alliance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ambassador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_Football"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_Football_Club"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animal_science"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animals_&amp;_wildlife"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Animator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antiques"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antropology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Applied_sciences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Archaeology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Archery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Architect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Architectural_structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Architecture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Area_of_interest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Armed_conflict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Armed_forces"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Art"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arts_culture_entertainment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asteroid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Astronaut"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Astronomical_forms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Astronomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#At_home"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#At_work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atheism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atheist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Athlete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Athletics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Audio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Authorities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Automotive_accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Autumn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Avenue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Award"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Award_ceremony"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Backpacking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Badminton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Band"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Baptism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Baptist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bar_Mitzvah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Baseball"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Basketball"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beach_volley"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beverage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bicycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bicycling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Billiard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biological_weapon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bird"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bird_watching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Black_hole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Board_game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bobsleigh"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bombing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boredom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Botany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bowling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boxer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Boxing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bridge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Broadcast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Broadcast_network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Broadcaster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buddhism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Buddhist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bus_accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Business"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CD_player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cabinet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Campaign_finance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Camping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Canal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Capoeira"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car_accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Car_racing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardinal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Catholic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Celebrity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cello"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Censorship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chancellor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Charity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chemical_weapon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chemistry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chess_player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Child"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Christian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Christian_festival_or_holiday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Christianity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Christmas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Church"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Civic_Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Civic_structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Civil_servant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Civil_service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Civil_war"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classical_music"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cleric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Climbing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clinic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collecting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#College"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comedian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comedy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comfucianism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commercial_Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Commercial_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Composer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Composition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computer_science"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concert_hall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Constellation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Constitution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Context_Attributes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Context_Dimensions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Controversy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Convention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cosmology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Costume_designer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coup_d&apos;_etat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Courthouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crafting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creative_work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creative_worker_&amp;_artist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cricket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cricketer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crime"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crime_law_justice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Criminal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Criminology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crisis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crusade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cultural_event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Culture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Currency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cycling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cyclist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DVD_player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Darts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Day_of_the_week"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Defense"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Democracy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Demographics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Developer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dictator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dictatorship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diplomacy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disaster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disaster_accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disgust"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Documentary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Domain_dependent_dimensions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drama"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drums"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Earth_sciences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Easter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eating_disorder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ecology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Economic_sanction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Economics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Economy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Economy_business_finance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Edifice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Education"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Educational_institution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Educational_organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elections"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electronic_equipment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electronic_literature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electronic_music"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Electronics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Elementary_school"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Embassy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Emergency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Engineering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entertainment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entomology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entrance_examination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Erotic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#European_elections"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Evolutionary_biology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Excitement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Executive_government"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extreme_conditions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extreme_conditions_warning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family_status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family_with_children"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fantasy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fencing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Festive_event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Field_hockey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Figure_skating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film_TV_artist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film_festival"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film_producer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Finance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Financial_crisis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Firearms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#First_language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fishing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fomula_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forecast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Foreign_aid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Foreign_policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formal_sciences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Freedom_of_press"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Freedom_of_speech"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Freemasonry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Funeral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Galaxy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gambling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Games"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gardening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gastronomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genetics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genocide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Geography"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Geology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Golf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Government"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Government_agency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Government_office"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Government_officers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Governor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Guitar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gymnastics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hand_gliding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hannukah"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Happiness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hardware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hardware_engineering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Head_of_Government"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Head_of_state"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Head_orientation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health_care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health_sciences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health_treatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Herbal_drugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#High_school"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Higway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hiking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hinduism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hip_hop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#History"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hobby"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Holiday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Holistic_drugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Homeopathic_drugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Homeopathy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horror"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horse_racing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#House"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Human_rights"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ice_hockey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ice_skating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ideology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Illness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Imam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Immigration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Impeachment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inauguration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Information_science"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Information_technology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Injury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Institution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intangible"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interior_policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#International_relations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interview"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Invention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Islam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Island"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jewish"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jewish_festival_or_holiday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jihad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Job_opportunity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Journalist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Judaism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Judge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Judo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Justice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Karate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Karting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kickboxing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kite_surfing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Labour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lacrosse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Landform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Landmark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Law"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Law_firm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Layout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leaving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Legislation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leisure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Library"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Life_sciences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lifestyle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lifestyle_leisure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lifestyle_news"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lighthouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Linguistics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Literary_medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Literary_product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Literary_techniques"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Literature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lobbying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Local_authority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Local_elections"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Logic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Luge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lutheran"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lying"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lyric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lyricist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MMORPG"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mac"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mammal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manuscript"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marathon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Marine_biology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Married_or_with_partner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Martial_arts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Massacre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Match"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mathematics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mayor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Media_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Media_player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mental_illness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metal_music"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meteor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meteorology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Methodist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Middle_school"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Migration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Military_conflict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Military_defense"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Military_intervention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Military_weapon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minister_of_state"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ministry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Missile_systems"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mobile_phone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modelling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monarch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monarchy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Monument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Morning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mororcycling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mosque"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motor_racing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Movie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Movie_theater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Museum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Music"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Music_Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Music_event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Music_festival"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Music_genres"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Music_producer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Music_venue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musical_artist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muslim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mythopoeia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nanotechnology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#National_elections"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#National_government"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#National_security"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nationalisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Natural_disaster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Natural_sciences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Naturalism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nature_&amp;_Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Networking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#News"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Newspaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Night"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nobel_prize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-governmental_organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non_profit_organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Noon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Novel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Novella"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nuclear_energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nuclear_policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nuclear_weapons"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ocean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oceanography"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Olympics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oral_literature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Oriental_martial_arts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orthodox"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#P2P"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Painting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paintings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paleontology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parachuting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Paraolympics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parent_organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Park"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parliament"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parliament_body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parliamentary_hearing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Particle_physics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Peace_negotiations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pentecost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Periodical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Periodical_literature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personal_computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pharmacology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Philosopher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Philosophy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physical_sciences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Physics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Piano"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place_of_worship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plane_accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Planet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Play"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poetry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_act"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_campaign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_candidate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_dissent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_immunity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_movement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_party"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_rights"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_science"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Political_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Politician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Politics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poll"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Polo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pop_music"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poverty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Preschool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prescription_drugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#President"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Priest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prime_minister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Privatisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prophet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Protestant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Psychology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Public_Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Public_finance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Puzzle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rabbi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Race"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Racism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radio_broadcast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rafting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ramadan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Record_label"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recreation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Referee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Referendum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Refugee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Regional_authority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Regional_elections"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Regulatory_policy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relative_Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relative_location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religion_belief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religious_agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religious_conflict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religious_event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religious_festival_or_holiday"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religious_identity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Religious_leader"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Remote_location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reptile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Research_project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Researcher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Residence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Retirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Revolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rhythm_and_blues"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Riot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#River"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Road"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rock_music"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rodeo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role_playing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Roman_catholic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Romance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rowing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Running"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sailing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sales"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sales_person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Satire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Satisfaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Saxophone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#School"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Science"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Science_fiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Science_technology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scientific_event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scientific_research"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scientist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Screenwriter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scuba_diving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sculpting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sculpture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Season"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Secondary_User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Security_measures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Senior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Series"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Settlement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shooter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shopping_mall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Short_story"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Show"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Simulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Singer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Single"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sitting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skateboarding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sketch_story"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skiing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sky_diving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skyscraper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smart_phone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snooker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Snowboarding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soccer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soccer_Club"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soccer_player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social_Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social_conflict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social_event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social_issues"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social_network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social_sciences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Social_security"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Society"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sociology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Softball"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software_engineering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Song"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Song_writer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soul_music"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spacecraft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spatio-Temporal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Species"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Speleology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports_Club"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports_Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports_Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports_agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports_game"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports_league"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stadium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standardization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Star"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State_policies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Station"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Statistics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stereo_set"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stockmarket"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strategy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Street"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Strike"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Summer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Summit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surfing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surprise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swimmer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swimming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Synagogue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TV_set"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Table_tennis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tablet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taekwondo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tangible"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taoism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tax"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teachers_union"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technological_event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Technology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Teenager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temple"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tennis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tennis_player"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Terrorism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Text"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theater"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theatre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Theatrical_script"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Therapy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thriller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Time_of_day"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Topics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tourism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Town"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Town_hall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Traditional_music"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tragedy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tragicomedy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Train"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Train_accident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transportation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Travel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Treaty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Triathlon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trivia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trumpet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unemployment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Union"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#University"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Upbringing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Urban_structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_Dimensions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User_location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vaccination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Valley"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Verse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Veteran_affairs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Veto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vice_president"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Video"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Video_games"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Video_stream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vignette"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Village"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Violin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visual_arts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volcano"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volleyball"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Voting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#War"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water_polo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water_skiing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water_sports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Watercourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weapon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weaponry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weather_Report"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Web_content_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Web_page"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wedding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weightlifting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Welfare"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Western_medicine_drugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wildlife_conservation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wind_surfing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winter_olympics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winter_sports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wireless_technology"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#With_acquaintances"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#With_childern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#With_family"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#With_friends"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Work"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#World_heritage_site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wrestler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wrestling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Writer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yom_kippur"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zoo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Zoology"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInterest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubTopic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTopic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAgentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGenreOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dutch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#English"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#French"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Friday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#German"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Saturday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sunday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thursday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tuesday"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wednesday"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#contributors"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#isDescribedBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#title"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Accident"/>
+        <Class IRI="#Disaster_accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Act"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Action"/>
+        <Class IRI="#Video_games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Active_User"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Activity"/>
+        <Class IRI="#Intangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <Class IRI="#Film_TV_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Addiction"/>
+        <Class IRI="#Society"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Administrative_region"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adult"/>
+        <Class IRI="#Age_categorization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adult_education"/>
+        <Class IRI="#Education"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Adventure"/>
+        <Class IRI="#Video_games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aero_sports"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Afternoon"/>
+        <Class IRI="#Time_of_day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Age_categorization"/>
+        <Class IRI="#Demographics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Age_group"/>
+        <Class IRI="#Demographics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agnosticism"/>
+        <Class IRI="#Religion_belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agnosticist"/>
+        <Class IRI="#Religious_identity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agnosticist"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Agnosticism"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agriculture"/>
+        <Class IRI="#Life_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aicraft"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airline"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airplane"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airport"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Album"/>
+        <Class IRI="#Creative_work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alliance"/>
+        <Class IRI="#Diplomacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alone"/>
+        <Class IRI="#Social_Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ambassador"/>
+        <Class IRI="#Government_officers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ambassador"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#International_relations"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_Football"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_Football_Club"/>
+        <Class IRI="#Sports_Club"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_Football_Club"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#American_Football"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anger"/>
+        <Class IRI="#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animal_science"/>
+        <Class IRI="#Life_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animals"/>
+        <Class IRI="#Animals_&amp;_wildlife"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animals_&amp;_wildlife"/>
+        <Class IRI="#Nature_&amp;_Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animals_&amp;_wildlife"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Animal_science"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Animator"/>
+        <Class IRI="#Film_TV_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antiques"/>
+        <Class IRI="#Arts_culture_entertainment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antropology"/>
+        <Class IRI="#Social_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Applied_sciences"/>
+        <Class IRI="#Science"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Archaeology"/>
+        <Class IRI="#Social_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Archery"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Architect"/>
+        <Class IRI="#Creative_worker_&amp;_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Architect"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Architecture"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Architectural_structure"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Architectural_structure"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Architecture"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Architecture"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Area_of_interest"/>
+        <Class IRI="#Relative_location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Armed_conflict"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Armed_forces"/>
+        <Class IRI="#Defense"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Art"/>
+        <Class IRI="#Arts_culture_entertainment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artifact"/>
+        <Class IRI="#Tangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artist"/>
+        <Class IRI="#Creative_worker_&amp;_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arts_culture_entertainment"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asteroid"/>
+        <Class IRI="#Astronomical_forms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Astronaut"/>
+        <Class IRI="#Professional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Astronomical_forms"/>
+        <Class IRI="#Intangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Astronomical_forms"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Astronomy"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Astronomy"/>
+        <Class IRI="#Physical_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#At_home"/>
+        <Class IRI="#Physical_location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#At_work"/>
+        <Class IRI="#Physical_location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atheism"/>
+        <Class IRI="#Religion_belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atheist"/>
+        <Class IRI="#Religious_identity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atheist"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Atheism"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Athlete"/>
+        <Class IRI="#Sports_agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Athletics"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Audio"/>
+        <Class IRI="#Media_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Authorities"/>
+        <Class IRI="#Political_organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Automotive_accident"/>
+        <Class IRI="#Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Autumn"/>
+        <Class IRI="#Season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avenue"/>
+        <Class IRI="#Urban_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Award"/>
+        <Class IRI="#Intangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Award_ceremony"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Backpacking"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Badminton"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Band"/>
+        <Class IRI="#Music_Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baptism"/>
+        <Class IRI="#Religious_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baptism"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Christianity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baptist"/>
+        <Class IRI="#Christian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bar_Mitzvah"/>
+        <Class IRI="#Religious_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bar_Mitzvah"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Judaism"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Baseball"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Basketball"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bass"/>
+        <Class IRI="#Instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beach"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beach_volley"/>
+        <Class IRI="#Volleyball"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beverage"/>
+        <Class IRI="#Tangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beverage"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Gastronomy"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Cycling"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycling"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Billiard"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biological_weapon"/>
+        <Class IRI="#Military_weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biology"/>
+        <Class IRI="#Life_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bird"/>
+        <Class IRI="#Animals"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bird_watching"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Black_hole"/>
+        <Class IRI="#Astronomical_forms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blog"/>
+        <Class IRI="#Web_content_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Board_game"/>
+        <Class IRI="#Video_games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boat"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boating"/>
+        <Class IRI="#Water_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bobsleigh"/>
+        <Class IRI="#Winter_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bombing"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Book"/>
+        <Class IRI="#Literary_product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boredom"/>
+        <Class IRI="#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Botany"/>
+        <Class IRI="#Life_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bowling"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boxer"/>
+        <Class IRI="#Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boxer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Boxing"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Boxing"/>
+        <Class IRI="#Martial_arts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bridge"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Broadcast"/>
+        <Class IRI="#Arts_culture_entertainment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Broadcast_network"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Broadcaster"/>
+        <Class IRI="#Professional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Broadcaster"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Broadcast"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buddhism"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buddhist"/>
+        <Class IRI="#Religious_identity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Buddhist"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Buddhism"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bus_accident"/>
+        <Class IRI="#Automotive_accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Business"/>
+        <Class IRI="#Economy_business_finance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CD_player"/>
+        <Class IRI="#Electronic_equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cabinet"/>
+        <Class IRI="#Government"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campaign_finance"/>
+        <Class IRI="#Political_campaign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campaign_finance"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Finance"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Camping"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Canal"/>
+        <Class IRI="#Watercourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Capoeira"/>
+        <Class IRI="#Martial_arts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car_accident"/>
+        <Class IRI="#Automotive_accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Car_racing"/>
+        <Class IRI="#Motor_racing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cardinal"/>
+        <Class IRI="#Religious_leader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cat"/>
+        <Class IRI="#Pet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Catholic"/>
+        <Class IRI="#Christian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cave"/>
+        <Class IRI="#Landform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Celebrity"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cello"/>
+        <Class IRI="#Instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Censorship"/>
+        <Class IRI="#Act"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Censorship"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Arts_culture_entertainment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Censorship"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Politics"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chancellor"/>
+        <Class IRI="#Head_of_Government"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Charity"/>
+        <Class IRI="#Society"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chemical_weapon"/>
+        <Class IRI="#Military_weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chemistry"/>
+        <Class IRI="#Physical_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chess"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chess_player"/>
+        <Class IRI="#Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chess_player"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Chess"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <Class IRI="#Age_categorization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Child"/>
+        <Class IRI="#Relative_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Christian"/>
+        <Class IRI="#Religious_identity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Christian"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Christianity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Christian_festival_or_holiday"/>
+        <Class IRI="#Religious_festival_or_holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Christian_festival_or_holiday"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Christianity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Christianity"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Christmas"/>
+        <Class IRI="#Christian_festival_or_holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Church"/>
+        <Class IRI="#Place_of_worship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#Administrative_region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Civic_Organization"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Civic_structure"/>
+        <Class IRI="#Architectural_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Civil_servant"/>
+        <Class IRI="#Professional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Civil_service"/>
+        <Class IRI="#Public_Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Civil_war"/>
+        <Class IRI="#War"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classical_music"/>
+        <Class IRI="#Music_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cleric"/>
+        <Class IRI="#Religious_agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Climbing"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clinic"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clinic"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clinic"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Health"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collecting"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#College"/>
+        <Class IRI="#Educational_institution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comedian"/>
+        <Class IRI="#Actor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comedy"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comfucianism"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commercial_Organization"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Commercial_Service"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Company"/>
+        <Class IRI="#Commercial_Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Composer"/>
+        <Class IRI="#Musical_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Composition"/>
+        <Class IRI="#Creative_work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer"/>
+        <Class IRI="#Electronic_equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer_science"/>
+        <Class IRI="#Formal_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer_science"/>
+        <Class IRI="#Technology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concert"/>
+        <Class IRI="#Music_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concert_hall"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concert_hall"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Constellation"/>
+        <Class IRI="#Astronomical_forms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Constitution"/>
+        <Class IRI="#Legislation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Context_Attributes"/>
+        <Class IRI="#Context_Dimensions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Landform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Controversy"/>
+        <Class IRI="#Society"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Convention"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cosmology"/>
+        <Class IRI="#Astronomy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Costume_designer"/>
+        <Class IRI="#Film_TV_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Administrative_region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coup_d&apos;_etat"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Courthouse"/>
+        <Class IRI="#Government_office"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Courthouse"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Crime_law_justice"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crafting"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creative_work"/>
+        <Class IRI="#Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creative_work"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Arts_culture_entertainment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creative_worker_&amp;_artist"/>
+        <Class IRI="#Professional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cricket"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cricketer"/>
+        <Class IRI="#Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cricketer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Cricket"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crime"/>
+        <Class IRI="#Crime_law_justice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crime_law_justice"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Criminal"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Criminal"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Crime_law_justice"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Criminology"/>
+        <Class IRI="#Crime_law_justice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Criminology"/>
+        <Class IRI="#Social_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crisis"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crusade"/>
+        <Class IRI="#Religious_conflict"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crusade"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#History"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cultural_event"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cultural_event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Arts_culture_entertainment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Culture"/>
+        <Class IRI="#Arts_culture_entertainment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Currency"/>
+        <Class IRI="#Economy_business_finance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cycling"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cyclist"/>
+        <Class IRI="#Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cyclist"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Cycling"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DVD_player"/>
+        <Class IRI="#Electronic_equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dance"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Darts"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Day_of_the_week"/>
+        <Class IRI="#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Defense"/>
+        <Class IRI="#Politics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Democracy"/>
+        <Class IRI="#Political_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Demographics"/>
+        <Class IRI="#User_Dimensions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Developer"/>
+        <Class IRI="#Creative_worker_&amp;_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Device"/>
+        <Class IRI="#Tangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dictator"/>
+        <Class IRI="#Head_of_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dictator"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAgentOf"/>
+            <Class IRI="#Dictatorship"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dictatorship"/>
+        <Class IRI="#Political_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diet"/>
+        <Class IRI="#Health_treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diplomacy"/>
+        <Class IRI="#Politics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <Class IRI="#Film_TV_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disaster"/>
+        <Class IRI="#Disaster_accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disaster_accident"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disease"/>
+        <Class IRI="#Health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disgust"/>
+        <Class IRI="#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diving"/>
+        <Class IRI="#Water_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Documentary"/>
+        <Class IRI="#TV"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dog"/>
+        <Class IRI="#Pet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Domain_dependent_dimensions"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drama"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drugs"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drugs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Health_treatment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Drums"/>
+        <Class IRI="#Instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earth_sciences"/>
+        <Class IRI="#Physical_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Easter"/>
+        <Class IRI="#Christian_festival_or_holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eating_disorder"/>
+        <Class IRI="#Illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ecology"/>
+        <Class IRI="#Life_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Economic_sanction"/>
+        <Class IRI="#Foreign_aid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Economics"/>
+        <Class IRI="#Economy_business_finance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Economics"/>
+        <Class IRI="#Social_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Economy"/>
+        <Class IRI="#Economy_business_finance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Economy_business_finance"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Edifice"/>
+        <Class IRI="#Architectural_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Education"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Educational_institution"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Educational_institution"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Educational_institution"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Education"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Educational_organization"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Educational_organization"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Education"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elections"/>
+        <Class IRI="#Voting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electronic_equipment"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electronic_equipment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Technology"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electronic_literature"/>
+        <Class IRI="#Literary_medium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electronic_music"/>
+        <Class IRI="#Music_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Electronics"/>
+        <Class IRI="#Applied_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Elementary_school"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Embassy"/>
+        <Class IRI="#Government_office"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Emergency"/>
+        <Class IRI="#Disaster_accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Employment"/>
+        <Class IRI="#Society"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engineering"/>
+        <Class IRI="#Applied_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Entertainment"/>
+        <Class IRI="#Arts_culture_entertainment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Entomology"/>
+        <Class IRI="#Life_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Entrance_examination"/>
+        <Class IRI="#Education"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Environment"/>
+        <Class IRI="#Nature_&amp;_Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Epic"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Erotic"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#European_elections"/>
+        <Class IRI="#Elections"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evening"/>
+        <Class IRI="#Time_of_day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class IRI="#Intangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evolution"/>
+        <Class IRI="#Evolutionary_biology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Evolutionary_biology"/>
+        <Class IRI="#Biology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Excitement"/>
+        <Class IRI="#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Executive_government"/>
+        <Class IRI="#Government"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extreme_conditions"/>
+        <Class IRI="#Weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extreme_conditions_warning"/>
+        <Class IRI="#Extreme_conditions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family"/>
+        <Class IRI="#Society"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family_status"/>
+        <Class IRI="#Demographics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family_with_children"/>
+        <Class IRI="#Family_status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fantasy"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fencing"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Festive_event"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fiction"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Field_hockey"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Figure_skating"/>
+        <Class IRI="#Ice_skating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasGenre"/>
+            <Class IRI="#Generic_storytelling_genres"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film_TV_artist"/>
+        <Class IRI="#Artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film_TV_artist"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Film"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film_TV_artist"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#TV"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film_festival"/>
+        <Class IRI="#Cultural_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film_festival"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Film"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film_producer"/>
+        <Class IRI="#Film_TV_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Finance"/>
+        <Class IRI="#Economy_business_finance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Financial_crisis"/>
+        <Class IRI="#Crisis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Financial_crisis"/>
+        <Class IRI="#Economy_business_finance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Firearms"/>
+        <Class IRI="#Military_weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#First_language"/>
+        <Class IRI="#Demographics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fish"/>
+        <Class IRI="#Animals"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fishing"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fomula_1"/>
+        <Class IRI="#Car_racing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <Class IRI="#Tangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Food"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Gastronomy"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forecast"/>
+        <Class IRI="#Weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Foreign_aid"/>
+        <Class IRI="#Foreign_policy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Foreign_policy"/>
+        <Class IRI="#State_policies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Formal_sciences"/>
+        <Class IRI="#Science"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Freedom_of_press"/>
+        <Class IRI="#Political_rights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Freedom_of_speech"/>
+        <Class IRI="#Political_rights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Freemasonry"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Funeral"/>
+        <Class IRI="#Social_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Galaxy"/>
+        <Class IRI="#Astronomical_forms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gambling"/>
+        <Class IRI="#Games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Games"/>
+        <Class IRI="#Recreation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gardening"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gastronomy"/>
+        <Class IRI="#Lifestyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gender"/>
+        <Class IRI="#Demographics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Generic_storytelling_genres"/>
+        <Class IRI="#Arts_culture_entertainment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Genetics"/>
+        <Class IRI="#Biology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Genocide"/>
+        <Class IRI="#Massacre"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geography"/>
+        <Class IRI="#Earth_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Geology"/>
+        <Class IRI="#Earth_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Golf"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Government"/>
+        <Class IRI="#Political_organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Government_agency"/>
+        <Class IRI="#Government"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Government_office"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Government_office"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Government_officers"/>
+        <Class IRI="#Political_agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Government_officers"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAgentOf"/>
+            <Class IRI="#Government"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Governor"/>
+        <Class IRI="#Government_officers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Guitar"/>
+        <Class IRI="#Instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gymnastics"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hand_gliding"/>
+        <Class IRI="#Aero_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hannukah"/>
+        <Class IRI="#Jewish_festival_or_holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Happiness"/>
+        <Class IRI="#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hardware"/>
+        <Class IRI="#Electronic_equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hardware_engineering"/>
+        <Class IRI="#Computer_science"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Head_of_Government"/>
+        <Class IRI="#Government_officers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Head_of_state"/>
+        <Class IRI="#Government_officers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Head_orientation"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Health"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Health_care"/>
+        <Class IRI="#Health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Health_sciences"/>
+        <Class IRI="#Health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Health_sciences"/>
+        <Class IRI="#Science"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Health_treatment"/>
+        <Class IRI="#Health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Herbal_drugs"/>
+        <Class IRI="#Drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#High_school"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Higway"/>
+        <Class IRI="#Urban_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hiking"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hinduism"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hip_hop"/>
+        <Class IRI="#Music_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#History"/>
+        <Class IRI="#Arts_culture_entertainment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#History"/>
+        <Class IRI="#Social_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hobby"/>
+        <Class IRI="#Recreation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Holiday"/>
+        <Class IRI="#Festive_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Holistic_drugs"/>
+        <Class IRI="#Drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homeopathic_drugs"/>
+        <Class IRI="#Drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homeopathic_drugs"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Homeopathy"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Homeopathy"/>
+        <Class IRI="#Medicine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horror"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Horse_racing"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospital"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospital"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hospital"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Health"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#House"/>
+        <Class IRI="#Residence"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Human_rights"/>
+        <Class IRI="#Political_rights"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ice_hockey"/>
+        <Class IRI="#Winter_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ice_skating"/>
+        <Class IRI="#Winter_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ideology"/>
+        <Class IRI="#Religion_belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Illness"/>
+        <Class IRI="#Health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Image"/>
+        <Class IRI="#Media_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Imam"/>
+        <Class IRI="#Religious_leader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Immigration"/>
+        <Class IRI="#Society"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Impeachment"/>
+        <Class IRI="#Political_act"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inauguration"/>
+        <Class IRI="#Political_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infant"/>
+        <Class IRI="#Age_categorization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Information_science"/>
+        <Class IRI="#Formal_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Information_technology"/>
+        <Class IRI="#Information_science"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Information_technology"/>
+        <Class IRI="#Technology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infrastructure"/>
+        <Class IRI="#Intangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Injury"/>
+        <Class IRI="#Health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insect"/>
+        <Class IRI="#Animals"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Institution"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instrument"/>
+        <Class IRI="#Tangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Instrument"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Music"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intangible"/>
+        <Class IRI="#Domain_dependent_dimensions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interface"/>
+        <Class IRI="#Context_Attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interior_policy"/>
+        <Class IRI="#State_policies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#International_relations"/>
+        <Class IRI="#Diplomacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#International_relations"/>
+        <Class IRI="#Political_science"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interview"/>
+        <Class IRI="#Creative_work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Invention"/>
+        <Class IRI="#Scientific_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Invention"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Science_technology"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Islam"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Island"/>
+        <Class IRI="#Landform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jewish"/>
+        <Class IRI="#Religious_identity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jewish"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Judaism"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jewish_festival_or_holiday"/>
+        <Class IRI="#Religious_festival_or_holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jewish_festival_or_holiday"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Judaism"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jihad"/>
+        <Class IRI="#Religious_conflict"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Job_opportunity"/>
+        <Class IRI="#Employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Journalist"/>
+        <Class IRI="#Professional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judaism"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judge"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judge"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Crime_law_justice"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Judo"/>
+        <Class IRI="#Oriental_martial_arts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Justice"/>
+        <Class IRI="#Crime_law_justice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Karate"/>
+        <Class IRI="#Oriental_martial_arts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Karting"/>
+        <Class IRI="#Motor_racing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kickboxing"/>
+        <Class IRI="#Martial_arts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kite_surfing"/>
+        <Class IRI="#Aero_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Labour"/>
+        <Class IRI="#Employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lacrosse"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lake"/>
+        <Class IRI="#Watercourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Landform"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Landform"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Nature_&amp;_Environment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Landmark"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <Class IRI="#Electronic_equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laser"/>
+        <Class IRI="#Technology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Law"/>
+        <Class IRI="#Crime_law_justice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Law"/>
+        <Class IRI="#Social_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Law_firm"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Law_firm"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Law"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Layout"/>
+        <Class IRI="#Interface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leaving"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Legislation"/>
+        <Class IRI="#Law"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leisure"/>
+        <Class IRI="#Lifestyle_leisure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Library"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Library"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Life_sciences"/>
+        <Class IRI="#Natural_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lifestyle"/>
+        <Class IRI="#Lifestyle_leisure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lifestyle_leisure"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lifestyle_news"/>
+        <Class IRI="#Lifestyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lighthouse"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Linguistics"/>
+        <Class IRI="#Social_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Literary_medium"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Literary_product"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Literary_product"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Literary_medium"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Literary_techniques"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Literature"/>
+        <Class IRI="#Arts_culture_entertainment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Literature"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasGenre"/>
+            <Class IRI="#Generic_storytelling_genres"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lobbying"/>
+        <Class IRI="#Politics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Local_authority"/>
+        <Class IRI="#Authorities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Local_elections"/>
+        <Class IRI="#Elections"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#Spatio-Temporal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Logic"/>
+        <Class IRI="#Formal_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Luge"/>
+        <Class IRI="#Winter_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lutheran"/>
+        <Class IRI="#Christian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lying"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lyric"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lyricist"/>
+        <Class IRI="#Musical_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MMORPG"/>
+        <Class IRI="#Role_playing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mac"/>
+        <Class IRI="#Electronic_equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mammal"/>
+        <Class IRI="#Animals"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manuscript"/>
+        <Class IRI="#Literary_product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marathon"/>
+        <Class IRI="#Running"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Marine_biology"/>
+        <Class IRI="#Biology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Married_or_with_partner"/>
+        <Class IRI="#Family_status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Martial_arts"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Massacre"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Match"/>
+        <Class IRI="#Sports_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mathematics"/>
+        <Class IRI="#Formal_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mayor"/>
+        <Class IRI="#Government_officers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Media_Type"/>
+        <Class IRI="#Context_Attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Media_player"/>
+        <Class IRI="#Electronic_equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicine"/>
+        <Class IRI="#Health_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mental_illness"/>
+        <Class IRI="#Illness"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metal_music"/>
+        <Class IRI="#Music_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meteor"/>
+        <Class IRI="#Astronomical_forms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Meteorology"/>
+        <Class IRI="#Earth_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Methodist"/>
+        <Class IRI="#Christian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Middle_school"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Migration"/>
+        <Class IRI="#Politics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Military_conflict"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Military_defense"/>
+        <Class IRI="#Defense"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Military_intervention"/>
+        <Class IRI="#War"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Military_weapon"/>
+        <Class IRI="#Weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Military_weapon"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Armed_forces"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minister"/>
+        <Class IRI="#Government_officers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minister"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAgentOf"/>
+            <Class IRI="#Ministry"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minister_of_state"/>
+        <Class IRI="#Head_of_Government"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ministry"/>
+        <Class IRI="#Government"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Missile_systems"/>
+        <Class IRI="#Military_weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mobile_phone"/>
+        <Class IRI="#Electronic_equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Modality"/>
+        <Class IRI="#Interface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Modelling"/>
+        <Class IRI="#Hobby"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monarch"/>
+        <Class IRI="#Head_of_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monarch"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAgentOf"/>
+            <Class IRI="#Monarchy"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monarchy"/>
+        <Class IRI="#Political_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monk"/>
+        <Class IRI="#Religious_agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monument"/>
+        <Class IRI="#Architectural_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Monument"/>
+        <Class IRI="#Landmark"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Morning"/>
+        <Class IRI="#Time_of_day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mororcycling"/>
+        <Class IRI="#Motor_racing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mosque"/>
+        <Class IRI="#Place_of_worship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motion"/>
+        <Class IRI="#User_Dimensions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motor_racing"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mountain"/>
+        <Class IRI="#Landform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movie"/>
+        <Class IRI="#Creative_work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movie"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Film"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movie_theater"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movie_theater"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Museum"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Museum"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Museum"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Arts_culture_entertainment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasGenre"/>
+            <Class IRI="#Music_genres"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music_Organization"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music_Organization"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Music"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music_event"/>
+        <Class IRI="#Cultural_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music_event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Music"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music_festival"/>
+        <Class IRI="#Music_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music_genres"/>
+        <Class IRI="#Arts_culture_entertainment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music_producer"/>
+        <Class IRI="#Musical_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music_venue"/>
+        <Class IRI="#Cultural_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musical"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musical_artist"/>
+        <Class IRI="#Artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musical_artist"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Music"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musician"/>
+        <Class IRI="#Musical_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muslim"/>
+        <Class IRI="#Religious_identity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muslim"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Islam"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mythopoeia"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nanotechnology"/>
+        <Class IRI="#Technology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#National_elections"/>
+        <Class IRI="#Elections"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#National_government"/>
+        <Class IRI="#Government"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#National_security"/>
+        <Class IRI="#Defense"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nationalisation"/>
+        <Class IRI="#Political_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natural_disaster"/>
+        <Class IRI="#Disaster"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Natural_sciences"/>
+        <Class IRI="#Science"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Naturalism"/>
+        <Class IRI="#Religion_belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nature_&amp;_Environment"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nature_&amp;_Environment"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Life_sciences"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Networking"/>
+        <Class IRI="#Computer_science"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#News"/>
+        <Class IRI="#Intangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#News"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Topics"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Newspaper"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Night"/>
+        <Class IRI="#Time_of_day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nobel_prize"/>
+        <Class IRI="#Award_ceremony"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nobel_prize"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <ObjectUnionOf>
+                <Class IRI="#Literature"/>
+                <Class IRI="#Science"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-governmental_organization"/>
+        <Class IRI="#Political_movement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non_profit_organization"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Noon"/>
+        <Class IRI="#Time_of_day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Novel"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Novella"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nuclear_energy"/>
+        <Class IRI="#Particle_physics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nuclear_policy"/>
+        <Class IRI="#State_policies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nuclear_weapons"/>
+        <Class IRI="#Military_weapon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ocean"/>
+        <Class IRI="#Watercourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oceanography"/>
+        <Class IRI="#Earth_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Olympics"/>
+        <Class IRI="#Sports_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oral_literature"/>
+        <Class IRI="#Literary_medium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Oriental_martial_arts"/>
+        <Class IRI="#Martial_arts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orthodox"/>
+        <Class IRI="#Christian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#P2P"/>
+        <Class IRI="#Web_content_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Painting"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paintings"/>
+        <Class IRI="#Creative_work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paleontology"/>
+        <Class IRI="#Life_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parachuting"/>
+        <Class IRI="#Aero_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Paraolympics"/>
+        <Class IRI="#Olympics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent"/>
+        <Class IRI="#Relative_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parent_organization"/>
+        <Class IRI="#Educational_organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Park"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parliament"/>
+        <Class IRI="#Government_office"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parliament_body"/>
+        <Class IRI="#Government"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parliament_body"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Crime_law_justice"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parliamentary_hearing"/>
+        <Class IRI="#Political_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Particle_physics"/>
+        <Class IRI="#Physics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Peace_negotiations"/>
+        <Class IRI="#Diplomacy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pension"/>
+        <Class IRI="#Employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pentecost"/>
+        <Class IRI="#Christian_festival_or_holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Periodical"/>
+        <Class IRI="#Literary_product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Periodical_literature"/>
+        <Class IRI="#Literary_medium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personal_computer"/>
+        <Class IRI="#Electronic_equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pet"/>
+        <Class IRI="#Animals"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pet"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Lifestyle"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pharmacology"/>
+        <Class IRI="#Life_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Philosopher"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Philosopher"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Philosophy"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Philosophy"/>
+        <Class IRI="#Religion_belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_location"/>
+        <Class IRI="#User_location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physical_sciences"/>
+        <Class IRI="#Natural_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Physics"/>
+        <Class IRI="#Physical_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Piano"/>
+        <Class IRI="#Instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place_of_worship"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place_of_worship"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Place_of_worship"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Religion_belief"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plague"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plane_accident"/>
+        <Class IRI="#Accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Planet"/>
+        <Class IRI="#Astronomical_forms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <Class IRI="#Tangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Nature_&amp;_Environment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Play"/>
+        <Class IRI="#Creative_work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poetry"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_Event"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_Event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Politics"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_act"/>
+        <Class IRI="#Act"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_act"/>
+        <Class IRI="#Political_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_agent"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_agent"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Politics"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_campaign"/>
+        <Class IRI="#Political_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_candidate"/>
+        <Class IRI="#Political_agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_candidate"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAgentOf"/>
+            <Class IRI="#Elections"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_dissent"/>
+        <Class IRI="#Politics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_dissent"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_immunity"/>
+        <Class IRI="#Politics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_movement"/>
+        <Class IRI="#Political_organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_organization"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_organization"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Politics"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_party"/>
+        <Class IRI="#Political_movement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_region"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_region"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Politics"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_rights"/>
+        <Class IRI="#Politics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_science"/>
+        <Class IRI="#Politics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_science"/>
+        <Class IRI="#Social_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Political_system"/>
+        <Class IRI="#Politics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Politician"/>
+        <Class IRI="#Political_agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Politics"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poll"/>
+        <Class IRI="#Elections"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Polo"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pop_music"/>
+        <Class IRI="#Music_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pope"/>
+        <Class IRI="#Religious_leader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poverty"/>
+        <Class IRI="#Society"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Preschool"/>
+        <Class IRI="#School"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prescription_drugs"/>
+        <Class IRI="#Drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#President"/>
+        <Class IRI="#Head_of_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#President"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAgentOf"/>
+            <Class IRI="#Democracy"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Priest"/>
+        <Class IRI="#Religious_leader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prime_minister"/>
+        <Class IRI="#Head_of_Government"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Privatisation"/>
+        <Class IRI="#Political_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Product"/>
+        <Class IRI="#Tangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professional"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Project"/>
+        <Class IRI="#Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prophet"/>
+        <Class IRI="#Religious_leader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prose"/>
+        <Class IRI="#Literary_techniques"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protest"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Protestant"/>
+        <Class IRI="#Christian"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Psychology"/>
+        <Class IRI="#Social_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Public_Service"/>
+        <Class IRI="#Service"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Public_finance"/>
+        <Class IRI="#Finance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Puzzle"/>
+        <Class IRI="#Video_games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rabbi"/>
+        <Class IRI="#Religious_leader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Race"/>
+        <Class IRI="#Sports_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Racism"/>
+        <Class IRI="#Society"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radio"/>
+        <Class IRI="#Electronic_equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radio_broadcast"/>
+        <Class IRI="#Audio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rafting"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ramadan"/>
+        <Class IRI="#Religious_festival_or_holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ramadan"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Islam"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rap"/>
+        <Class IRI="#Music_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reaction"/>
+        <Class IRI="#User_Dimensions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reality"/>
+        <Class IRI="#Film"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Record_label"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Record_label"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Music"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recreation"/>
+        <Class IRI="#Leisure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Referee"/>
+        <Class IRI="#Sports_agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Referendum"/>
+        <Class IRI="#Voting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Refugee"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Migration"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Regional_authority"/>
+        <Class IRI="#Authorities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Regional_elections"/>
+        <Class IRI="#Elections"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Regulatory_policy"/>
+        <Class IRI="#State_policies"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relative_Role"/>
+        <Class IRI="#User_Dimensions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relative_location"/>
+        <Class IRI="#User_location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religion"/>
+        <Class IRI="#Religion_belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religion_belief"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religious_agent"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religious_conflict"/>
+        <Class IRI="#Religion_belief"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religious_conflict"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religious_event"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religious_event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Religion_belief"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religious_festival_or_holiday"/>
+        <Class IRI="#Holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religious_festival_or_holiday"/>
+        <Class IRI="#Religious_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religious_identity"/>
+        <Class IRI="#Religious_agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Religious_leader"/>
+        <Class IRI="#Religious_agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Remote_location"/>
+        <Class IRI="#Physical_location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reptile"/>
+        <Class IRI="#Animals"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Research_project"/>
+        <Class IRI="#Project"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Researcher"/>
+        <Class IRI="#Professional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Residence"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurant"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurant"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Gastronomy"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Retirement"/>
+        <Class IRI="#Employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Revolution"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rhythm_and_blues"/>
+        <Class IRI="#Music_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Riot"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#River"/>
+        <Class IRI="#Watercourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Road"/>
+        <Class IRI="#Urban_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rock_music"/>
+        <Class IRI="#Music_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rodeo"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role_playing"/>
+        <Class IRI="#Video_games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Roman_catholic"/>
+        <Class IRI="#Catholic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Romance"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rowing"/>
+        <Class IRI="#Water_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Running"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sailing"/>
+        <Class IRI="#Water_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sales"/>
+        <Class IRI="#Shopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sales_person"/>
+        <Class IRI="#Professional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Satire"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Satisfaction"/>
+        <Class IRI="#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Saxophone"/>
+        <Class IRI="#Instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#School"/>
+        <Class IRI="#Educational_institution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#School"/>
+        <Class IRI="#Educational_organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Science"/>
+        <Class IRI="#Science_technology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Science_fiction"/>
+        <Class IRI="#Fiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Science_technology"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scientific_event"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scientific_event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Science"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scientific_research"/>
+        <Class IRI="#Scientific_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scientist"/>
+        <Class IRI="#Professional"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scientist"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Science"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Screenwriter"/>
+        <Class IRI="#Film_TV_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scuba_diving"/>
+        <Class IRI="#Diving"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sculpting"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sculpture"/>
+        <Class IRI="#Creative_work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sea"/>
+        <Class IRI="#Watercourse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Season"/>
+        <Class IRI="#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Secondary_User"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Security_measures"/>
+        <Class IRI="#Defense"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Senior"/>
+        <Class IRI="#Age_categorization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Series"/>
+        <Class IRI="#TV"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Series"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasGenre"/>
+            <Class IRI="#Generic_storytelling_genres"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Service"/>
+        <Class IRI="#Intangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Settlement"/>
+        <Class IRI="#Administrative_region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ship"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shooter"/>
+        <Class IRI="#Video_games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shopping"/>
+        <Class IRI="#Leisure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shopping_mall"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shopping_mall"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shopping_mall"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Shopping"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Short_story"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Show"/>
+        <Class IRI="#TV"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simulation"/>
+        <Class IRI="#Video_games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Singer"/>
+        <Class IRI="#Musical_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Single"/>
+        <Class IRI="#Family_status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sitting"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skateboarding"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skating"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sketch_story"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skiing"/>
+        <Class IRI="#Winter_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sky_diving"/>
+        <Class IRI="#Aero_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skyscraper"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smart_phone"/>
+        <Class IRI="#Mobile_phone"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Snooker"/>
+        <Class IRI="#Billiard"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Snowboarding"/>
+        <Class IRI="#Winter_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soccer"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soccer_Club"/>
+        <Class IRI="#Sports_Club"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soccer_Club"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Soccer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soccer_player"/>
+        <Class IRI="#Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soccer_player"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Soccer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social_Environment"/>
+        <Class IRI="#User_Dimensions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social_conflict"/>
+        <Class IRI="#Society"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social_conflict"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social_event"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social_issues"/>
+        <Class IRI="#Society"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social_network"/>
+        <Class IRI="#Web_content_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social_sciences"/>
+        <Class IRI="#Science"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Social_security"/>
+        <Class IRI="#Employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Society"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sociology"/>
+        <Class IRI="#Social_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sociology"/>
+        <Class IRI="#Society"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Softball"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Technology"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Software_engineering"/>
+        <Class IRI="#Computer_science"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Song"/>
+        <Class IRI="#Creative_work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Song_writer"/>
+        <Class IRI="#Musical_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soul_music"/>
+        <Class IRI="#Music_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spacecraft"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spatio-Temporal"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Species"/>
+        <Class IRI="#Animals_&amp;_wildlife"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speleology"/>
+        <Class IRI="#Earth_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports_Club"/>
+        <Class IRI="#Sports_Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports_Event"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports_Event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Sports"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports_Organization"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports_Organization"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Sports"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports_agent"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports_agent"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Sports"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports_game"/>
+        <Class IRI="#Video_games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports_league"/>
+        <Class IRI="#Sports_Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spring"/>
+        <Class IRI="#Season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stadium"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Standardization"/>
+        <Class IRI="#Scientific_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Standing"/>
+        <Class IRI="#Motion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Star"/>
+        <Class IRI="#Astronomical_forms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#State"/>
+        <Class IRI="#Administrative_region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#State_policies"/>
+        <Class IRI="#Politics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Station"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Station"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Statistics"/>
+        <Class IRI="#Formal_sciences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stereo_set"/>
+        <Class IRI="#Electronic_equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stockmarket"/>
+        <Class IRI="#Economy_business_finance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strategy"/>
+        <Class IRI="#Video_games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Street"/>
+        <Class IRI="#Urban_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Strike"/>
+        <Class IRI="#Employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Summer"/>
+        <Class IRI="#Season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Summit"/>
+        <Class IRI="#Political_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Summit"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Diplomacy"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surfing"/>
+        <Class IRI="#Water_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surprise"/>
+        <Class IRI="#Reaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swimmer"/>
+        <Class IRI="#Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swimmer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Swimming"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swimming"/>
+        <Class IRI="#Water_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Synagogue"/>
+        <Class IRI="#Place_of_worship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TV"/>
+        <Class IRI="#Arts_culture_entertainment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TV_set"/>
+        <Class IRI="#Electronic_equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Table_tennis"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tablet"/>
+        <Class IRI="#Electronic_equipment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taekwondo"/>
+        <Class IRI="#Oriental_martial_arts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tangible"/>
+        <Class IRI="#Domain_dependent_dimensions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taoism"/>
+        <Class IRI="#Religion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tax"/>
+        <Class IRI="#Economy_business_finance"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teachers_union"/>
+        <Class IRI="#Educational_organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teachers_union"/>
+        <Class IRI="#Union"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technological_event"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technological_event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Technology"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Technology"/>
+        <Class IRI="#Science_technology"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Teenager"/>
+        <Class IRI="#Age_categorization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temple"/>
+        <Class IRI="#Place_of_worship"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tennis"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tennis_player"/>
+        <Class IRI="#Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tennis_player"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Tennis"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Terrorism"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Text"/>
+        <Class IRI="#Media_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theater"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theatre"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theatre"/>
+        <Class IRI="#Edifice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Theatrical_script"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Therapy"/>
+        <Class IRI="#Health_treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thriller"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time"/>
+        <Class IRI="#Context_Dimensions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time"/>
+        <Class IRI="#Spatio-Temporal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Time_of_day"/>
+        <Class IRI="#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Topics"/>
+        <Class IRI="#Domain_dependent_dimensions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tourism"/>
+        <Class IRI="#Travel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Town"/>
+        <Class IRI="#Administrative_region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Town_hall"/>
+        <Class IRI="#Government_office"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toy"/>
+        <Class IRI="#Product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Traditional_music"/>
+        <Class IRI="#Music_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tragedy"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tragicomedy"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train"/>
+        <Class IRI="#Vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Train_accident"/>
+        <Class IRI="#Automotive_accident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transportation"/>
+        <Class IRI="#Lifestyle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Travel"/>
+        <Class IRI="#Leisure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Treaty"/>
+        <Class IRI="#Political_act"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triathlon"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trivia"/>
+        <Class IRI="#Video_games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Trumpet"/>
+        <Class IRI="#Instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unemployment"/>
+        <Class IRI="#Employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Union"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Union"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopic"/>
+            <Class IRI="#Employment"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#University"/>
+        <Class IRI="#Educational_institution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#University"/>
+        <Class IRI="#Educational_organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unrest_conflicts_war"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Upbringing"/>
+        <Class IRI="#Education"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Urban_structure"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <Class IRI="#Relative_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_Dimensions"/>
+        <Class IRI="#Context_Dimensions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_location"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User_location"/>
+        <Class IRI="#User_Dimensions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vaccination"/>
+        <Class IRI="#Health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Valley"/>
+        <Class IRI="#Landform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#Tangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <ObjectIntersectionOf>
+                <Class IRI="#Transportation"/>
+                <Class IRI="#Travel"/>
+            </ObjectIntersectionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Verse"/>
+        <Class IRI="#Literary_techniques"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Veteran_affairs"/>
+        <Class IRI="#Defense"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Veto"/>
+        <Class IRI="#Political_act"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vice_president"/>
+        <Class IRI="#Head_of_state"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Video"/>
+        <Class IRI="#Media_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Video_games"/>
+        <Class IRI="#Arts_culture_entertainment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Video_games"/>
+        <Class IRI="#Games"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Video_stream"/>
+        <Class IRI="#Video"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vignette"/>
+        <Class IRI="#Literature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Village"/>
+        <Class IRI="#Administrative_region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Violin"/>
+        <Class IRI="#Instrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Visitor"/>
+        <Class IRI="#Relative_Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Visual_arts"/>
+        <Class IRI="#Art"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volcano"/>
+        <Class IRI="#Landform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volleyball"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Voting"/>
+        <Class IRI="#Political_Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wage"/>
+        <Class IRI="#Employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#War"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water_polo"/>
+        <Class IRI="#Water_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water_skiing"/>
+        <Class IRI="#Water_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water_sports"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Watercourse"/>
+        <Class IRI="#Landform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weapon"/>
+        <Class IRI="#Tangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weapon"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Weaponry"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weaponry"/>
+        <Class IRI="#Armed_conflict"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weather"/>
+        <Class IRI="#Topics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weather_Report"/>
+        <Class IRI="#Weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Web_content_type"/>
+        <Class IRI="#Context_Attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Web_page"/>
+        <Class IRI="#Web_content_type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wedding"/>
+        <Class IRI="#Social_event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weightlifting"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Welfare"/>
+        <Class IRI="#Society"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Western_medicine_drugs"/>
+        <Class IRI="#Drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wildlife_conservation"/>
+        <Class IRI="#Animals_&amp;_wildlife"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wind_surfing"/>
+        <Class IRI="#Water_sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Winter"/>
+        <Class IRI="#Season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Winter_olympics"/>
+        <Class IRI="#Olympics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Winter_sports"/>
+        <Class IRI="#Sports"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wireless_technology"/>
+        <Class IRI="#Computer_science"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#With_acquaintances"/>
+        <Class IRI="#Social_Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#With_childern"/>
+        <Class IRI="#With_family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#With_family"/>
+        <Class IRI="#Social_Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#With_friends"/>
+        <Class IRI="#Social_Environment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Work"/>
+        <Class IRI="#Intangible"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#World_heritage_site"/>
+        <Class IRI="#Landmark"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wrestler"/>
+        <Class IRI="#Athlete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wrestler"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Wrestling"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wrestling"/>
+        <Class IRI="#Martial_arts"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Writer"/>
+        <Class IRI="#Creative_worker_&amp;_artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Year"/>
+        <Class IRI="#Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yom_kippur"/>
+        <Class IRI="#Jewish_festival_or_holiday"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zoo"/>
+        <Class IRI="#Civic_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zoo"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubTopic"/>
+            <Class IRI="#Animals_&amp;_wildlife"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Zoology"/>
+        <Class IRI="#Life_sciences"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#First_language"/>
+        <NamedIndividual IRI="#Dutch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#First_language"/>
+        <NamedIndividual IRI="#English"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#First_language"/>
+        <NamedIndividual IRI="#French"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day_of_the_week"/>
+        <NamedIndividual IRI="#Friday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#First_language"/>
+        <NamedIndividual IRI="#German"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day_of_the_week"/>
+        <NamedIndividual IRI="#Monday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day_of_the_week"/>
+        <NamedIndividual IRI="#Saturday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day_of_the_week"/>
+        <NamedIndividual IRI="#Sunday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day_of_the_week"/>
+        <NamedIndividual IRI="#Thursday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day_of_the_week"/>
+        <NamedIndividual IRI="#Tuesday"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Day_of_the_week"/>
+        <NamedIndividual IRI="#Wednesday"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <ObjectProperty IRI="#hasTopic"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isGenreOf"/>
+        <ObjectProperty IRI="#hasGenre"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Film"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Literature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#TV"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Video_games"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAgentOf"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Generic_storytelling_genres"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Arts_culture_entertainment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Crime_law_justice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Disaster_accident"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Economy_business_finance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Education"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Health"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Lifestyle_leisure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Nature_&amp;_Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Politics"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Religion_belief"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Science_technology"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Society"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Sports"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Unrest_conflicts_war"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubTopic"/>
+        <Class IRI="#Weather"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTopic"/>
+        <Class IRI="#Topics"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Actor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Actor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Actor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Actress</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Age_group</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">To be assigned members of statistical age groups such as 25-35, &gt;55 etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#American_Football</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">American Football</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#American_Football</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Rugby</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Antiques</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">To add extensive antiques categorization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Art</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">General</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Autumn</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Autumn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Autumn</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Fall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bicycling</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Cycling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Billiard</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Billiard</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Billiard</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Pool</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Car</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Automobile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Culture</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">General</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#isDescribedBy"/>
+        <IRI>#Domain_dependent_dimensions</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">gumo: Interest 0.9</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#isDescribedBy"/>
+        <IRI>#Edifice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">dbpedia:&apos;Architectural Structure&apos; 1.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#isDescribedBy"/>
+        <IRI>#Edifice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">schema.org:&apos;Civic Structure&apos; 0.75
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Edifice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Edifice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Edifice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Entertainment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">General</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Government_officers</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Government_official</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hobby</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Hobby</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Infant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Baby</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Infant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Infant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Monarch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">King</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Monarch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Queen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Non-governmental_organization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">NGO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Painting</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The art of painting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Parliament_body</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Legislature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Periodical</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Work published in periodicals or literature magazines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Periodical</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Magazine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Personal_computer</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">PC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Personal_computer</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Personal_computer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Soccer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Football</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Soccer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Soccer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Soccer_player</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Football_player</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Soccer_player</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Footballer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sports_Club</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sports_Club</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sports_Club</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sports_team</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Stadium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Arena</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Stadium</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Stadium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TV_set</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TV</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TV_set</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TV_set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TV_set</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Television</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Theater</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The art of theatre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Town_hall</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">City_hall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Train</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Locomotive</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Train</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Train</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Wage</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Salary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Wage</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Wage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Web_page</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Website</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
