@@ -3061,9 +3061,6 @@
         <ObjectProperty abbreviatedIRI="lumo:offspring"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty abbreviatedIRI="lumo:operatesIn"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty abbreviatedIRI="lumo:partOf"/>
     </Declaration>
     <Declaration>
@@ -7187,14 +7184,6 @@
         <Class abbreviatedIRI="lumo:person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="lumo:operatesIn"/>
-        <Class abbreviatedIRI="lumo:PoliticalOrganisation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty abbreviatedIRI="lumo:operatesIn"/>
-        <Class abbreviatedIRI="lumo:politician"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="lumo:partOf"/>
         <Class abbreviatedIRI="lumo:technicalSystem"/>
     </ObjectPropertyDomain>
@@ -7332,10 +7321,6 @@
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="lumo:offspring"/>
         <Class abbreviatedIRI="lumo:person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="lumo:operatesIn"/>
-        <Class abbreviatedIRI="lumo:NationalState"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="lumo:partOf"/>
