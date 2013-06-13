@@ -1,0 +1,37 @@
+.specterm {
+	border: 1px solid black;
+	background: #F0F0F0;
+	padding: 20px 40px;
+	margin-top: 10px;
+}
+
+
+body {
+
+    
+        margin-left: auto;
+    margin-right: auto;
+    font-family: Helvetica;
+    width:900px;
+    min-height:768px;
+    height:100%;
+    position: relative;
+    font-size: 12pt;
+    
+
+  	text-align:justify;
+
+}
+
+dl {padding: 20px 0;}
+dl dt {font-weight: bold;}
+dl dd {display: block; margin: 0 0 0 40px;}
+.copyright{padding:0 0 20px 0; font-size:14px;}
+h2 { font: 140% sans-serif; margin: 0.83em 0;}
+h3{font: 120% sans-serif; padding:10px 0; display:block;}
+ul {
+	display: block;
+    list-style-type: circle;
+    margin: 20px 40px;
+}
+

@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html 
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:mvcb="http://webns.net/mvcb/"
+  xml:lang="en"
+> 
+
+  <head>
+    <title>NAME: LONG NAME</title>
+    <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
+    <link rel="mvcb:generatorAgent" type="application/rdf+xml" title="DOAP" href="http://rdfohloh.wikier.org/project/specgen" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+ 
+  <body>
+    <h1>LinkedTV Core Ontology</h1>
+      <dl><dt>IRI:</dt><dd><a href="http://data.linkedtv.eu/ontologies/core">http://data.linkedtv.eu/ontologies/core</a></dd></dl>
+    <dl>
+      <dt>This version:</dt>
+      <dd>2013-01-12 - v0.1 [<a href="core.owl">OWL</a>]</dd>
+
+      <dt>History:</dt>
+      <dd>2013-01-12 - v0.1 [<a href="core.owl">OWL</a>]</dd>
+
+      <dt>Authors:</dt>
+      <dd> <a href="http://www.eurecom.fr/en/people/redondo-garcia-jose-luis/biography">José Luis Redondo García</a>,
+           <a href="http://www.eurecom.fr/~troncy">Rapha&eumll Troncy</a>
+      </dd>
+    </dl>
+
+    <p class="copyright">Copyright © 2012-2013 José Luis Redondo García and Rapha&eumll Troncy</p>
+
+    <p about="">
+    <a href="http://creativecommons.org/licenses/by/1.0/">
+        <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" alt="Creative Commons License" style="border: 0; float: right; padding: 5px;" />
+    </a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/1.0/">Creative Commons Attribution License</a>. This copyright applies to the <em>LinkedTV Ontology</em> and accompanying documentation in RDF. Regarding underlying technology, LinkedTV uses W3C's <a href="http://www.w3.org/RDF/">RDF</a> technology, an open Web standard that can be freely used by anyone.
+    </p>
+          
+    <!-- ===================================================================== -->
+    <hr />
+
+    <h2 id="abstract">Abstract</h2>
+    <p>
+        The LinkedTV ontology has been developed under the scope of the European Proyect LinkedTV FP7. This proyects aims to make TV content and Web information seamlessly interconnected. This way, watching television while accessing Web content should be smooth and transparent to the viewer.
+          
+          
+          Technologically speaking, this vision requires systems to be able to represent television information as is done today in the Web of Data: interlinked other resources at different granularities, with any other kind of information, searchable, and accessible everywhere and at every time. Here is where the LinkedTV ontology plays its role.
+          </p>
+          <p>
+          
+          The LinkedTV ontology defines a list of classes that can be relevant in the vast domain of television content, like for example Chapters, Scenes, Concepts, Objects, etc. This model relies on other stablished and well known ontologies like the <a href="http://www.w3.org/ns/openannotation/core/">The Open Annotation Core Data Model</a>, the <a href="http://www.w3.org/ns/ma-ont/">Ontology for Media Resources</a>, the <a href="http://nerd.eurecom.fr/ontology#">NERD ontology</a>, or the <a href="http://purl.org/ontology/po/"> Programmes Ontology</a>.
+          </p>
+          <p>
+          In this ontology, television content can be annotated not only at the upper level of the entire program but also with different degrees of granularity, thanks to the use of the <a href="http://www.w3.org/TR/media-frags/">Media Fragments URI 1.0</a> specification. The instances of the MediaFragment class are the anchors where the other information is attached: legacy metadata from the providers, results obtained by automatic analysis of the video file, and even more important, links it to other resources in the Web where extra information about the content can be  found.
+    </p>
+
+
+          
+    <!-- ===================================================================== -->
+    <hr />
+    <h2 id="status">Status of this Document</h2>
+    <p>
+        The LinkedTV ontology intends to evolve gradually during the duration of the LinkedTV EU Project.
+        We show here a first list of classes that is expected to be increased during the following months. In parallel, some
+        adjustments to the documentation could be done in order to reflect the emerging feautures that LinkedTV intends to implement.
+             </p>
+              <p>
+        Also, new inferred axioms and changes may be added at any time according to the evolution of the other ontologies involved in the data model.
+        The LinkedTV namespace URI, by contrast, is fixed and its identifier is not expected to change.
+        Furthermore, efforts are underway to ensure the long-term preservation of 
+        the http://www.linkedtv.eu domain.
+           </p>
+              <p>
+        Comments are very welcome, please send them to <a href="mailto:redondo@eurecom.fr">
+        redondo@eurecom.fr</a>. Thank you.
+    </p>
+
+          
+          <!-- ===================================================================== -->
+          <hr />
+          
+    <h2 id="contents">Table of Contents</h2>
+    <ol id="toc">
+      <li><a href="#sec-glance">LinkedTV ontology at a glance</a></li>
+      <li><a href="#overview">LinkedTV metamodel infrastructure</a></li>
+      <li><a href="#reference">LinkedTV classes</a></li>
+    </ol>
+
+    
+    <h3 id="sec-glance">1. LinkedTV ontology at a glance</h3>
+    <p>
+      An alphabetical index of LinkedTV terms, by class and by property
+      (relationships, attributes), are given below. All the terms are hyperlinked 
+      to their detailed description for quick reference.
+    </p>
+
+    <!-- The list of classes and properties goes here -->
+    <div style="padding: 1em; border: dotted; background-color: #ddd;"><p>Classes:  <a href="#ASR">ASR</a>,  <a href="#Chapter">Chapter</a>,  <a href="#Concept">Concept</a>,  <a href="#Entity">Entity</a>,  <a href="#Face">Face</a>,  <a href="#Keyword">Keyword</a>,  <a href="#Organization">Organization</a>,  <a href="#RelatedContent">RelatedContent</a>,  <a href="#Scene">Scene</a>,  <a href="#Shot">Shot</a>,  <a href="#SpatialObject">SpatialObject</a>, 
+</p><p>Properties:  <a href="#hasConfidence">hasConfidence</a>,  <a href="#hasMediaResource">hasMediaResource</a>,  <a href="#hasSubtitle">hasSubtitle</a>, 
+</p>
+</div>
+    <!-- End of the terms list -->
+
+    <h3 id="overview">2. LinkedTV metamodel infrastructure</h3>
+    
+    <center><img src="figure/linkedtv_model.png" height="600" width="900"></center>
+        
+    <p>Following ontologies have been selected as basis for metadata infrastructure in LinkedTV: </p>
+
+    <div class="ontology-multimedia">
+    <p>a) Ontologies for feature descriptions of multimedia metadata:</p>
+    <ul>
+        <li><a href="http://www.w3.org/ns/ma-ont/">Ontology for Media Resources</a> – general properties of the media</li>
+        <li><a href="http://www.w3.org/ns/openannotation/core/">Open Annotation</a> – linking the objects with media fragments URI, rating, user preferences</li>
+        <li><a href="http://nerd.eurecom.fr/ontology#">NIF/NERD ontology</a> – general types of the named entities recognized</li>
+        <li><a href="http://xmlns.com/foaf/0.1/">FOAF ontology</a> – representing the speakers or the faces</li>
+        <li><a href="http://purl.org/NET/c4dm/event.owl#">Event Ontology</a> – representing events</li>
+        <li><a href="http://www.w3.org/TR/prov-o/">PROV-O</a> – representing provenance ontology</li>
+        <li><a href="http://purl.org/ontology/po/">BBC Program ontology</a> – broadcast related metadata</li>
+    </ul>
+    </div>
+          
+    <div class="ontology-linking">
+    <p>b) Following ontologies have been selected as large scale resource for linking detected concepts:</p>
+    <ul>
+        <li><a href="http://vocab.linkeddata.es/lscom/">LSCOM</a></li>
+        <li><a href="http://wordnet.princeton.edu/">WordNet</a></li>
+        <li><a href="http://mappings.dbpedia.org/server/ontology/classes/">DBpedia</a></li>
+    </ul>
+    </div>
+    
+    <p> These ontotologies are interlinked and utilizes each others features. BBC Programmes ontology uses FOAF for actor descriptions and Event ontology as provider for superconcepts for events such as broadcasts. PROV-O ontology relies in others in a similar way, and all of them together create the LinkedTV data model as is shown in the figure. </p>
+    
+    <!-- ===================================================================== -->
+    <h3 id="reference">3. LinkedTV classes</h3>
+
+    <!-- The following is the script-generated list of classes and properties -->
+    <div class="specterm" id="ASR">
+<h3>Class: linkedtv:ASR</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#ASR">http://data.linkedtv.eu/ontologies/core#ASR</a></p><p><em>ASR</em> - Annotates the automatic translation of spoken words of the video into text. This information is specially important when subtitles are not available for a particular video.  </p><p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="Chapter">
+<h3>Class: linkedtv:Chapter</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#Chapter">http://data.linkedtv.eu/ontologies/core#Chapter</a></p><p><em>Chapter</em> - This class allows to represent a certain part of a a TV Content that elaborates about a specific topic or subject. In the LinkedTV data model, Chapters are always attached to a MediaFragment that specifies their temporal references.
+A TV content can be composed by zero, two, or more than two different Chapters, and every Chapter is composed of different Scenes. In most of the cases, the information about Chapters is given directly by the broadcasters. </p><p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="Concept">
+<h3>Class: linkedtv:Concept</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#Concept">http://data.linkedtv.eu/ontologies/core#Concept</a></p><p><em>Concept</em> - This class allows to represent a general idea, thought or notion, derived or inferred from specific instances that appear on a MediaFragment. In the LinkedTV project those concepts are classified according to the hierarchy defined in the LSCOM ontology (http://vocab.linkeddata.es/lscom/), and automatically extracted by using specific classifiers. </p><p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+    <dl><dt>Equivalent Class:</dt><dd><a href="http://vocab.linkeddata.es/lscom#Thing" style="font-family: monospace;">lscom:Thing</a></dd>
+    </dl>
+    <p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+</div>
+
+<div class="specterm" id="Entity">
+<h3>Class: linkedtv:Entity</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#Entity">http://data.linkedtv.eu/ontologies/core#Entity</a></p><p><em>Entity</em> - This class is used to represent the atomic elements that appear in the text, such as persons, organizations, locations, expressions of times, quantities, etc. In the context of the LinkedTV proyect, those entities are recognized by using the NERD web framework, which unifies numerous named entity extractors (http://nerd.eurecom.fr/). </p><p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+    <dl><dt>Equivalent Class:</dt><dd><a href="http://nerd.eurecom.fr/ontology#Thing" style="font-family: monospace;">nerd:Thing</a></dd>
+    </dl>
+    <p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+</div>
+
+<div class="specterm" id="Face">
+<h3>Class: linkedtv:Face</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#Face">http://data.linkedtv.eu/ontologies/core#Face</a></p><p><em>Face</em> - Represents the appearance of the face of a person inside a certain MediaFragment of the TV content.
+Usually, those faces are detected by executing automatic face recognition processes over the video. The spatial references for the bounding boxes where the faces are being shown are encoded in the URL using Media Fragments 1.0. </p>
+    
+    <dl><dt>Equivalent Class:</dt><dd><a href="http://xmlns.com/foaf/0.1#Person" style="font-family: monospace;">foaf:Person</a></dd>
+    </dl>
+    <p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+</div>
+
+<div class="specterm" id="Keyword">
+<h3>Class: linkedtv:Keyword</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#Keyword">http://data.linkedtv.eu/ontologies/core#Keyword</a></p><p><em>Keyword</em> - Word that is relevant inside the context defined by a certain Media Fragment. These classes are attached to those MediaFragment class by using the property ma:hasKeyword. </p><p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="Organization">
+<h3>Class: linkedtv:Organization</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#Organization">http://data.linkedtv.eu/ontologies/core#Organization</a></p><p><em>Organization</em> - This class represents the agents responsible of generating oa:Annotations inside the LinkedTV knowledge base. Examples of organizations are the different parnerts involved in the project: EURECOM, CERTH, RBB, etc. </p><p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="RelatedContent">
+<h3>Class: linkedtv:RelatedContent</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#RelatedContent">http://data.linkedtv.eu/ontologies/core#RelatedContent</a></p><p><em>Related Content</em> - Content that is related to the main topic featured on the television content. These items may be manually determined (by the content editor) or may be populated automatically. </p><p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="Scene">
+<h3>Class: linkedtv:Scene</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#Scene">http://data.linkedtv.eu/ontologies/core#Scene</a></p><p><em>Scene</em> - A part of a TV content that occurs in a single location and continuous time. In the LinkedTV context, a scene is composed of a set of linkedtv:Shots, and normally belongs to a certain linkedtv:Chapter where other related scenes are included too. </p><p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="Shot">
+<h3>Class: linkedtv:Shot</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#Shot">http://data.linkedtv.eu/ontologies/core#Shot</a></p><p><em>Shot</em> - Represents a series of frames, that runs for an uninterrupted period of time. Also can be seen as the time between the beginning and end of a capturing process, or the continuous footage between two camera edits. </p><p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="SpatialObject">
+<h3>Class: linkedtv:SpatialObject</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#SpatialObject"></a>http://data.linkedtv.eu/ontologies/core#SpatialObject</a></p><p><em>Spatial Object</em> - This class represents an object that appears in a TV content during a certain period of time and has some spatial references attached to it. In the context of the LinkedTV project, those spatial references are basically a list of bounding boxes that specify where exactly the object is appearing. </p><p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="hasConfidence">
+<h3>Property: linkedtv:hasConfidence</h3>
+    <p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#hasConfidence">http://data.linkedtv.eu/ontologies/core#hasConfidence</a></p><p><em>hasConfidence</em> - It allows to specify the degree or trust that a linkedtv:Organization agent has over the fact that a instance of an oa:Annotation class is correct and the information that introduces in the data model is reliable.
+        This property is also used for indicating the degree of confidence that a NER extractor has had during the process of spotting a certain linkedtv:Entity class. </p>
+<dl><dt>OWL Type:</dt><dd>DatatypeProperty</dd>
+<dt>Domain:</dt> <dd><a href="http://www.openannotation.org/spec/core#Annotation" style="font-family: monospace;">http://www.openannotation.org/spec/core#Annotation</a>, <a href="http://data.linkedtv.eu/ontologies/core#Entity" style="font-family: monospace;">http://data.linkedtv.eu/ontologies/core#Entity</a> </dd><dt>Range:</dt> <dd><a href="http://www.w3.org/2001/XMLSchema#float" style="font-family: monospace;">xsd:float</a></dd></dl>
+<p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+          
+<div class="specterm" id="hasRelevance">
+<h3>Property: linkedtv:hasRelevance</h3>
+   <p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#hasRelevance">http://www.linkedtv.eu/ontology#hasConfidence</a></p><p><em>hasRelevance</em> - This property is used for expressing the relevance that a NER extractor has had during the process of spotting a certain linkedtv:Entity class. </p>
+<dl><dt>OWL Type:</dt><dd>DatatypeProperty</dd>
+<dt>Domain:</dt> <dd><a href="http://www.linkedtv.eu/ontology#Entity" style="font-family: monospace;">http://www.openannotation.org/spec/core#Annotation</a></dd><dt>Range:</dt> <dd><a href="http://www.w3.org/2001/XMLSchema#float" style="font-family: monospace;">xsd:float</a></dd></dl>
+<p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+</div>
+
+<div class="specterm" id="hasMediaResource">
+<h3>Property: linkedtv:hasMediaResource</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.linkedtv.eu/ontology#hasMediaResource">http://www.linkedtv.eu/ontology#hasMediaResource</a></p><p><em>hasMediaResource</em> - This property relates every instance of the po:Version class, with the upper ma:MediaFragment of the television content that is being described in it. </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>Domain:</dt> <dd><a href="http://purl.org/ontology/po#Version" style="font-family: monospace;">http://purl.org/ontology/po#Version</a></dd><dt>Range:</dt> <dd><a href="http://www.w3.org/ns/ma-ont#MediaFragment" style="font-family: monospace;">http://www.w3.org/ns/ma-ont#MediaFragment</a></dd></dl>
+<p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="hasSubtitle">
+<h3>Property: linkedtv:hasSubtitle</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.linkedtv.eu/ontology#hasSubtitle">http://www.linkedtv.eu/ontology#hasSubtitle</a></p><p><em>hasSubtitle</em> - For a particular ma:MediaFragment, it allows to specify which is the text of the corresponding subtitle, which is represented by an instance of a class str:String. </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>Domain:</dt> <dd><a href="http://www.w3.org/ns/ma-ont#MediaFragment" style="font-family: monospace;">http://www.w3.org/ns/ma-ont#MediaFragment</a></dd><dt>Range:</dt> <dd><a href="http://nlp2rdf.lod2.eu/schema/string#String" style="font-family: monospace;">http://nlp2rdf.lod2.eu/schema/string#String</a></dd></dl>
+<p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+
+    <!-- End of the terms list -->
+  </body>
+
+</html>
+
+<!-- specification regenerated by SpecGen5 at 03:55:11 01/15/13 CET -->
