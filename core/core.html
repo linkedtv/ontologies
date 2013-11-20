@@ -6,7 +6,7 @@
 > 
 
   <head>
-    <title>NAME: LONG NAME</title>
+    <title>LinkedTV Core Ontology</title>
     <meta http-equiv="content-type" content="text/xhtml+xml; charset=utf-8" />
     <link rel="mvcb:generatorAgent" type="application/rdf+xml" title="DOAP" href="http://rdfohloh.wikier.org/project/specgen" />
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -35,20 +35,23 @@
         <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" alt="Creative Commons License" style="border: 0; float: right; padding: 5px;" />
     </a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/1.0/">Creative Commons Attribution License</a>. This copyright applies to the <em>LinkedTV Ontology</em> and accompanying documentation in RDF. Regarding underlying technology, LinkedTV uses W3C's <a href="http://www.w3.org/RDF/">RDF</a> technology, an open Web standard that can be freely used by anyone.
     </p>
-          
+    <p about="">
+         This work is partially funded by the European Union’s 7th Framework Programme via the project <a href="http://www.linkedtv.eu/">LinkedTV</a> (GA 287911).
+    </p>
+
     <!-- ===================================================================== -->
     <hr />
 
     <h2 id="abstract">Abstract</h2>
     <p>
-        The LinkedTV ontology has been developed under the scope of the European Proyect LinkedTV FP7. This proyects aims to make TV content and Web information seamlessly interconnected. This way, watching television while accessing Web content should be smooth and transparent to the viewer.
+        The LinkedTV ontology has been developed under the scope of the European Project LinkedTV FP7. This project aims to make TV content and Web information seamlessly interconnected. This way, watching television while accessing Web content should be smooth and transparent to the viewer.
           
           
           Technologically speaking, this vision requires systems to be able to represent television information as is done today in the Web of Data: interlinked other resources at different granularities, with any other kind of information, searchable, and accessible everywhere and at every time. Here is where the LinkedTV ontology plays its role.
           </p>
           <p>
           
-          The LinkedTV ontology defines a list of classes that can be relevant in the vast domain of television content, like for example Chapters, Scenes, Concepts, Objects, etc. This model relies on other stablished and well known ontologies like the <a href="http://www.w3.org/ns/openannotation/core/">The Open Annotation Core Data Model</a>, the <a href="http://www.w3.org/ns/ma-ont/">Ontology for Media Resources</a>, the <a href="http://nerd.eurecom.fr/ontology#">NERD ontology</a>, or the <a href="http://purl.org/ontology/po/"> Programmes Ontology</a>.
+          The LinkedTV ontology defines a list of classes that can be relevant in the vast domain of television content, like for example Chapters, Scenes, Concepts, Objects, etc. This model relies on other established and well known ontologies like the <a href="http://www.w3.org/ns/openannotation/core/">The Open Annotation Core Data Model</a>, the <a href="http://www.w3.org/ns/ma-ont/">Ontology for Media Resources</a>, the <a href="http://nerd.eurecom.fr/ontology#">NERD ontology</a>, or the <a href="http://purl.org/ontology/po/"> Programmes Ontology</a>.
           </p>
           <p>
           In this ontology, television content can be annotated not only at the upper level of the entire program but also with different degrees of granularity, thanks to the use of the <a href="http://www.w3.org/TR/media-frags/">Media Fragments URI 1.0</a> specification. The instances of the MediaFragment class are the anchors where the other information is attached: legacy metadata from the providers, results obtained by automatic analysis of the video file, and even more important, links it to other resources in the Web where extra information about the content can be  found.
@@ -62,19 +65,18 @@
     <p>
         The LinkedTV ontology intends to evolve gradually during the duration of the LinkedTV EU Project.
         We show here a first list of classes that is expected to be increased during the following months. In parallel, some
-        adjustments to the documentation could be done in order to reflect the emerging feautures that LinkedTV intends to implement.
+        adjustments to the documentation could be done in order to reflect the emerging features that LinkedTV intends to implement.
              </p>
               <p>
         Also, new inferred axioms and changes may be added at any time according to the evolution of the other ontologies involved in the data model.
         The LinkedTV namespace URI, by contrast, is fixed and its identifier is not expected to change.
-        Furthermore, efforts are underway to ensure the long-term preservation of 
-        the http://www.linkedtv.eu domain.
+        Furthermore, efforts are underway to ensure the long-term preservation of the http://www.linkedtv.eu domain.
            </p>
-              <p>
+          <p>
         Comments are very welcome, please send them to <a href="mailto:redondo@eurecom.fr">
         redondo@eurecom.fr</a>. Thank you.
-    </p>
-
+        </p>
+        
           
           <!-- ===================================================================== -->
           <hr />
@@ -164,7 +166,7 @@ A TV content can be composed by zero, two, or more than two different Chapters, 
 
 <div class="specterm" id="Entity">
 <h3>Class: linkedtv:Entity</h3>
-<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#Entity">http://data.linkedtv.eu/ontologies/core#Entity</a></p><p><em>Entity</em> - This class is used to represent the atomic elements that appear in the text, such as persons, organizations, locations, expressions of times, quantities, etc. In the context of the LinkedTV proyect, those entities are recognized by using the NERD web framework, which unifies numerous named entity extractors (http://nerd.eurecom.fr/). </p><p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://data.linkedtv.eu/ontologies/core#Entity">http://data.linkedtv.eu/ontologies/core#Entity</a></p><p><em>Entity</em> - This class is used to represent the atomic elements that appear in the text, such as persons, organizations, locations, expressions of times, quantities, etc. In the context of the LinkedTV Project, those entities are recognized by using the NERD web framework, which unifies numerous named entity extractors (http://nerd.eurecom.fr/). </p><p style=" font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
 
     <dl><dt>Equivalent Class:</dt><dd><a href="http://nerd.eurecom.fr/ontology#Thing" style="font-family: monospace;">nerd:Thing</a></dd>
     </dl>
