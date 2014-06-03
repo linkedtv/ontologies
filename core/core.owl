@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY org "http://www.w3.org/ns/org" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY foaf2 "http://xmlns.com/foaf/0.1#" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY opmv "http://purl.org/net/opmv/ns/" >
+    <!ENTITY ma-ont "http://www.w3.org/ns/ma-ont#" >
+    <!ENTITY po "http://purl.org/ontology/po/" >
+    <!ENTITY ma "http://www.w3.org/ns/ma-ont/" >
+    <!ENTITY dbpedia-owl "http://dbpedia.org/ontology/" >
+    <!ENTITY cc "http://creativecommons.org/ns#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY voaf "http://purl.org/vocommons/voaf#" >
+    <!ENTITY nerd "http://nerd.eurecom.fr/ontology#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY lscom "http://vocab.linkeddata.es/lscom/" >
+    <!ENTITY lscom2 "http://vocab.linkeddata.es/lscom#" >
+    <!ENTITY ontologies "http://data.linkedtv.eu/ontologies/" >
+    <!ENTITY event "http://purl.org/NET/c4dm/event.owl/" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY str "http://nlp2rdf.lod2.eu/schema/string/" >
+    <!ENTITY string "http://nlp2rdf.lod2.eu/schema/string#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY timeline "http://purl.org/NET/c4dm/timeline.owl/" >
+    <!ENTITY linkedtv "http://data.linkedtv.eu/ontologies/core#" >
+    <!ENTITY oa "http://www.w3.org/ns/openannotation/core/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY nsa "http://multimedialab.elis.ugent.be/organon/ontologies/ninsuna/" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/owl/owlapi/turtle#"
+     xml:base="http://www.semanticweb.org/owl/owlapi/turtle"
+     xmlns:foaf2="http://xmlns.com/foaf/0.1#"
+     xmlns:nsa="http://multimedialab.elis.ugent.be/organon/ontologies/ninsuna/"
+     xmlns:opmv="http://purl.org/net/opmv/ns/"
+     xmlns:ontologies="http://data.linkedtv.eu/ontologies/"
+     xmlns:timeline="http://purl.org/NET/c4dm/timeline.owl/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:org="http://www.w3.org/ns/org"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:ma-ont="http://www.w3.org/ns/ma-ont#"
+     xmlns:nerd="http://nerd.eurecom.fr/ontology#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oa="http://www.w3.org/ns/openannotation/core/"
+     xmlns:event="http://purl.org/NET/c4dm/event.owl/"
+     xmlns:ma="http://www.w3.org/ns/ma-ont/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:lscom="http://vocab.linkeddata.es/lscom/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:linkedtv="&ontologies;core#"
+     xmlns:lscom2="http://vocab.linkeddata.es/lscom#"
+     xmlns:voaf="http://purl.org/vocommons/voaf#"
+     xmlns:str="http://nlp2rdf.lod2.eu/schema/string/"
+     xmlns:string="http://nlp2rdf.lod2.eu/schema/string#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:po="http://purl.org/ontology/po/"
+     xmlns:cc="http://creativecommons.org/ns#">
+    <owl:Ontology rdf:about="&ontologies;core">
+        <dcterms:issued rdf:datatype="&xsd;date">2013-01-12</dcterms:issued>
+        <dcterms:modified rdf:datatype="&xsd;date">2014-03-23</dcterms:modified>
+        <vann:preferredNamespacePrefix>linkedtv</vann:preferredNamespacePrefix>
+        <dcterms:title xml:lang="en">LinkedTV Core Ontology</dcterms:title>
+        <dcterms:description xml:lang="en">This is the ontology for representing information about television content developed under the scope of the FP7 European Project LinkedTV. It defines a list of classes that can be relevant in the vast domain of television content, like for example Chapters, Scenes, Concepts, Objects, etc. This model relies on other stablished and well known ontologies like the The Open Annotation Core Data Model, the Ontology for Media Resources, the NERD ontology, or the Programmes Ontology.</dcterms:description>
+        <owl:versionInfo>Version 0.2 - 2014-03-23</owl:versionInfo>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <vann:preferredNamespaceUri rdf:resource="&ontologies;core#"/>
+        <dcterms:publisher rdf:resource="http://www.eurecom.fr/en/people/redondo-garcia-jose-luis"/>
+        <dcterms:creator rdf:resource="http://www.eurecom.fr/en/people/redondo-garcia-jose-luis"/>
+        <dcterms:contributor rdf:resource="http://www.eurecom.fr/~troncy/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&ontologies;core#hasConfidence">
+        <rdfs:label xml:lang="en">hasConfidence</rdfs:label>
+        <rdfs:comment xml:lang="en">It allows to specify the degree or trust that a linkedtv:Organization agent has over the fact that a instance of an oa:Annotation class is correct and the information that introduces in the data model is reliable.
+            This property is also used for indicating the degree of confidence that a NER extractor has had during the process of spotting a certain linkedtv:Entity class.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.openannotation.org/spec/core#Annotation"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&ontologies;core#hasSubtitle">
+        <rdfs:label xml:lang="en">hasSubtitle</rdfs:label>
+        <rdfs:comment xml:lang="en">For a particular ma:MediaFragment, it allows to specify which is the text of the corresponding subtitle, which is represented by an instance of a class str:String.</rdfs:comment>
+        <rdfs:domain rdf:resource="&ma-ont;MediaFragment"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&ontologies;core#hasMediaResource">
+        <rdfs:label xml:lang="en">hasMediaResource</rdfs:label>
+        <rdfs:comment xml:lang="en">This property relates every instance of the po:Version class, with the upper ma:MediaFragment of the television content that is being described in it.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/po#Version"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#hasMediaResource -->
+
+    <owl:ObjectProperty rdf:about="&ontologies;core#hasMediaResource">
+        <rdfs:label xml:lang="en">hasMediaResource</rdfs:label>
+        <rdfs:comment xml:lang="en">This property relates every instance of the po:Version class, with the upper ma:MediaFragment of the television content that is being described in it.</rdfs:comment>
+        <rdfs:range rdf:resource="&ma-ont;MediaFragment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#hasSubtitle -->
+
+    <owl:ObjectProperty rdf:about="&ontologies;core#hasSubtitle">
+        <rdfs:label xml:lang="en">hasSubtitle</rdfs:label>
+        <rdfs:comment xml:lang="en">For a particular ma:MediaFragment, it allows to specify which is the text of the corresponding subtitle, which is represented by an instance of a class str:String.</rdfs:comment>
+        <rdfs:range rdf:resource="&string;String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#hasConfidence -->
+
+    <owl:DatatypeProperty rdf:about="&ontologies;core#hasConfidence">
+        <rdfs:label xml:lang="en">hasConfidence</rdfs:label>
+        <rdfs:comment xml:lang="en">It allows to specify the degree or trust that a linkedtv:Organization agent has over the fact that a instance of an oa:Annotation class is correct and the information that introduces in the data model is reliable.
+            This property is also used for indicating the degree of confidence that a NER extractor has had during the process of spotting a certain linkedtv:Entity class.</rdfs:comment>
+        <rdfs:domain rdf:resource="&ontologies;core#Entity"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#hasRelevance -->
+
+    <owl:DatatypeProperty rdf:about="&ontologies;core#hasRelevance">
+        <rdfs:label xml:lang="en">hasRelevance</rdfs:label>
+        <rdfs:comment xml:lang="en">This property is used for expressing the relevance that a NER extractor has had during the process of spotting a certain linkedtv:Entity class.</rdfs:comment>
+        <rdfs:domain rdf:resource="&ontologies;core#Entity"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#ASR -->
+
+    <owl:Class rdf:about="&ontologies;core#ASR">
+        <rdfs:label>ASR</rdfs:label>
+        <rdfs:comment xml:lang="en">Annotates the automatic translation of spoken words of the video into text. This information is specially important when subtitles are not available for a particular video. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#Chapter -->
+
+    <owl:Class rdf:about="&ontologies;core#Chapter">
+        <rdfs:label xml:lang="de">Kapitel</rdfs:label>
+        <rdfs:label xml:lang="en">Chapter</rdfs:label>
+        <rdfs:label xml:lang="es">Capítulo</rdfs:label>
+        <rdfs:label xml:lang="fr">Chapitre</rdfs:label>
+        <rdfs:comment xml:lang="en">This class allows to represent a certain part of a a TV Content that elaborates about a specific topic or subject. In the LinkedTV data model, Chapters are always attached to a MediaFragment that specifies their temporal references.
+A TV content can be composed by zero, two, or more than two different Chapters, and every Chapter is composed of different Scenes. In most of the cases, the information about Chapters is given directly by the broadcasters.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#Concept -->
+
+    <owl:Class rdf:about="&ontologies;core#Concept">
+        <rdfs:label xml:lang="de">Konzept</rdfs:label>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:label xml:lang="es">Concepto</rdfs:label>
+        <rdfs:label xml:lang="fr">Concept</rdfs:label>
+        <owl:equivalentClass rdf:resource="&lscom2;Thing"/>
+        <rdfs:comment xml:lang="en">This class allows to represent a general idea, thought or notion, derived or inferred from specific instances that appear on a MediaFragment. In the LinkedTV project those concepts are classified according to the hierarchy defined in the LSCOM ontology (http://vocab.linkeddata.es/lscom/), and automatically extracted by using specific classifiers.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#Entity -->
+
+    <owl:Class rdf:about="&ontologies;core#Entity">
+        <rdfs:label xml:lang="de">Wesen</rdfs:label>
+        <rdfs:label xml:lang="en">Entity</rdfs:label>
+        <rdfs:label xml:lang="es">Entidad</rdfs:label>
+        <rdfs:label xml:lang="fr">Entité</rdfs:label>
+        <owl:equivalentClass rdf:resource="&nerd;Thing"/>
+        <rdfs:comment xml:lang="en">This class is used to represent the atomic elements that appear in the text, such as persons, organizations, locations, expressions of times, quantities, etc. In the context of the LinkedTV proyect, those entities are recognized by using the NERD web framework, which unifies numerous named entity extractors (http://nerd.eurecom.fr/).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#Face -->
+
+    <owl:Class rdf:about="&ontologies;core#Face">
+        <rdfs:label xml:lang="de">Gesicht</rdfs:label>
+        <rdfs:label xml:lang="en">Face</rdfs:label>
+        <rdfs:label xml:lang="es">Cara</rdfs:label>
+        <rdfs:label xml:lang="fr">Visage</rdfs:label>
+        <owl:equivalentClass rdf:resource="&foaf2;Person"/>
+        <rdfs:comment xml:lang="en">Represents the appearance of the face of a person inside a certain MediaFragment of the TV content. 
+Usually, those faces are detected by executing automatic face recognition processes over the video. The spatial references for the bounding boxes where the faces are being shown are encoded in the URL using Media Fragments 1.0.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#Keyword -->
+
+    <owl:Class rdf:about="&ontologies;core#Keyword">
+        <rdfs:label xml:lang="de">Stichwort</rdfs:label>
+        <rdfs:label xml:lang="en">Keyword</rdfs:label>
+        <rdfs:label xml:lang="es">Palabra clave</rdfs:label>
+        <rdfs:label xml:lang="fr">Mot-clé</rdfs:label>
+        <rdfs:comment xml:lang="en">Word that is relevant inside the context defined by a certain Media Fragment. These classes are attached to those MediaFragment class by using the property ma:hasKeyword.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#Organization -->
+
+    <owl:Class rdf:about="&ontologies;core#Organization">
+        <rdfs:label xml:lang="de">Organisation</rdfs:label>
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+        <rdfs:label xml:lang="es">Organización</rdfs:label>
+        <rdfs:label xml:lang="fr">Organisation</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents the agents responsible of generating oa:Annotations inside the LinkedTV knowledge base. Examples of organizations are the different parnerts involved in the project: EURECOM, CERTH, RBB, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#RelatedContent -->
+
+    <owl:Class rdf:about="&ontologies;core#RelatedContent">
+        <rdfs:label xml:lang="de">Ähnliche Inhalte</rdfs:label>
+        <rdfs:label xml:lang="en">Related content</rdfs:label>
+        <rdfs:label xml:lang="es">Contenidos relacionados</rdfs:label>
+        <rdfs:label xml:lang="fr">Contenu connexe</rdfs:label>
+        <rdfs:comment xml:lang="en">Content that is related to the main topic featured on the television content. These items may be manually determined (by the content editor) or may be populated automatically.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#Scene -->
+
+    <owl:Class rdf:about="&ontologies;core#Scene">
+        <rdfs:label xml:lang="de">Szene</rdfs:label>
+        <rdfs:label xml:lang="en">Scene</rdfs:label>
+        <rdfs:label xml:lang="es">Escena</rdfs:label>
+        <rdfs:label xml:lang="fr">Scène</rdfs:label>
+        <rdfs:comment xml:lang="en">A part of a TV content that occurs in a single location and continuous time. In the LinkedTV context, a scene is composed of a set of linkedtv:Shots, and normally belongs to a certain linkedtv:Chapter where other related scenes are included too.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#Shot -->
+
+    <owl:Class rdf:about="&ontologies;core#Shot">
+        <rdfs:label xml:lang="de">Shot</rdfs:label>
+        <rdfs:label xml:lang="en">Shot</rdfs:label>
+        <rdfs:label xml:lang="es">Toma</rdfs:label>
+        <rdfs:label xml:lang="fr">Prise</rdfs:label>
+        <rdfs:comment xml:lang="en">Represents a series of frames, that runs for an uninterrupted period of time. Also can be seen as the time between the beginning and end of a capturing process, or the continuous footage between two camera edits.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core#SpatialObject -->
+
+    <owl:Class rdf:about="&ontologies;core#SpatialObject">
+        <rdfs:label xml:lang="de">Spatial Object</rdfs:label>
+        <rdfs:label xml:lang="en">Spatial Object</rdfs:label>
+        <rdfs:label xml:lang="es">Objeto Espacial</rdfs:label>
+        <rdfs:label xml:lang="fr">Objet Spatiale</rdfs:label>
+        <rdfs:comment xml:lang="en">This class represents an object that appears in a TV content during a certain period of time and has some spatial references attached to it. In the context of the LinkedTV project, those spatial references are basically a list of bounding boxes that specify where exactly the object is appearing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://nerd.eurecom.fr/ontology#Thing -->
+
+    <owl:Class rdf:about="&nerd;Thing"/>
+    
+
+
+    <!-- http://nlp2rdf.lod2.eu/schema/string#String -->
+
+    <owl:Class rdf:about="&string;String"/>
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+    <owl:Class rdf:about="&voaf;Vocabulary"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/lscom#Thing -->
+
+    <owl:Class rdf:about="&lscom2;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ma-ont#MediaFragment -->
+
+    <owl:Class rdf:about="&ma-ont;MediaFragment"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1#Person -->
+
+    <owl:Class rdf:about="&foaf2;Person"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.linkedtv.eu/ontologies/core -->
+
+    <owl:NamedIndividual rdf:about="&ontologies;core">
+        <rdf:type rdf:resource="&voaf;Vocabulary"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
