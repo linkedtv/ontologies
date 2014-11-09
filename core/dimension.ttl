@@ -1,0 +1,60 @@
+@prefix linkedtv: <http://data.linkedtv.eu/ontologies/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix oa: <http://www.w3.org/ns/openannotation/core/> .
+
+### Enrichment dimensions definitions
+
+linkedtv:enrichmentScheme a skos:ConceptScheme;
+    rdfs:prefLabel "Enrichment dimensions scheme"@en;
+    skos:prefLabel "Enrichment dimensions scheme"@en;
+    rdfs:comment "The concept scheme defining the enrichment dimensions in LinkedTV"@en;
+    skos:note "This code list provides the experiment types of named entity annotators."@en.
+
+### LinkedCulture dimensions, see also http://www.linkedtv.eu/wiki/index.php/TKK_Dimensions_for_Enrichments
+
+linkedtv:Background a skos:Concept, oa:Motivation;
+    skos:prefLabel "Background"@en ;
+	rdfs:comment "Background articles about the topic of an artwork. Use in the LinkedCulture prototype"@en;
+    skos:inScheme linkedtv:enrichmentScheme .
+
+linkedtv:RelatedArtWork a skos:Concept, oa:Motivation;
+    skos:prefLabel "Related Art Work"@en ;
+	rdfs:comment "Related art objects given an art object that is the focus of a video chapter. Use in the LinkedCulture prototype"@en;
+    skos:inScheme linkedtv:enrichmentScheme .
+
+linkedtv:RelatedChapter a skos:Concept, oa:Motivation;
+    skos:prefLabel "Related Chapter"@en ;
+	rdfs:comment "Related TKK video chapters given a video chapter. Use in the LinkedCulture prototype"@en;
+    skos:inScheme linkedtv:enrichmentScheme .
+
+### LinkedNews dimensions, see also http://www.linkedtv.eu/wiki/index.php/RBB_Dimensions_for_Enrichments
+
+linkedtv:OtherMedia a skos:Concept, oa:Motivation;
+    skos:prefLabel "Other Media"@en ;
+	rdfs:comment "Story in other media, what other news providers say about a specific news event. Use in the LinkedNews prototype"@en;
+    skos:inScheme linkedtv:enrichmentScheme .
+
+linkedtv:Opinion a skos:Concept, oa:Motivation;
+    skos:prefLabel "Opinion"@en ;
+	rdfs:comment "How people interpret or reflect upon the topic of a news item. Opinion or background articles about the topic of a news item. This can be a bit broader than the exact news event discussed. Use in the LinkedNews prototype"@en;
+    skos:inScheme linkedtv:enrichmentScheme .
+
+linkedtv:Timeline a skos:Concept, oa:Motivation;
+    skos:prefLabel "Timeline"@en ;
+	rdfs:comment "Earlier news items similar to a story organised chronologically up to the time of the current story. Use in the LinkedNews prototype"@en;
+    skos:inScheme linkedtv:enrichmentScheme .
+
+linkedtv:SocialMedia a skos:Concept, oa:Motivation;
+    skos:prefLabel "Social Media"@en ;
+	rdfs:comment "Story in social media, what people say, and shared about a news event (optionally from different places in the world). Use in the LinkedNews prototype"@en;
+    skos:inScheme linkedtv:enrichmentScheme .
+
+linkedtv:InDepth a skos:Concept, oa:Motivation;
+    skos:prefLabel "In Depth"@en ;
+	rdfs:comment "Additional encyclopedic information about the current story via the main entities involved. Use in the LinkedNews prototype"@en;
+    skos:inScheme linkedtv:enrichmentScheme .
